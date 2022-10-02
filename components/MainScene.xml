@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--********** Copyright 2021 Roku Corp.  All Rights Reserved. **********-->
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="MainScene.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+	<script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+    <script type="text/brightscript" uri="UILogic/ScreenStackLogic.brs" />
+    <script type="text/brightscript" uri="UILogic/MenuScreenLogic.brs" />
+    <children>
+         <!-- Overhang with Roku Developers logo -->
+         <Overhang
+            id="overhang"
+            showOptions="false"
+            showClock="false"
+            logoUri="pkg:/images/hd_overhang_logo.png"
+            translation="[0,60]"/>
+        <!-- LoadingIndicator should be visible only in case of waiting for content -->
+	    <LoadingIndicator
+            id="loadingIndicator"
+            imageUri="pkg:/images/loader.png"
+            clockwise="TRUE"
+            spinInterval="2"
+            fadeInterval="0.5"
+            spacing="20"
+            imageWidth="100"
+            text="Loading..."
+            width="1920"
+            height="1080"
+            centered="FALSE"
+            translation="[0,0]"
+            textPadding="10"
+            font="font:SmallBoldSystemFont"
+            backgroundColor="0x551A8B"
+            backgroundOpacity="0"
+			visible="false"/>
+    </children>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--********** Copyright 2021 Roku Corp.  All Rights Reserved. **********-->
+<component name="MenuButton" extends="Group" >
+  <interface>
+    <field id="itemContent" type="node" onChange="OnContentChanged"/> 
+    <field id="width" type = "float" onChange="OnContentChanged" /> 
+    <field id="height" type = "float" onChange="OnContentChanged" /> 
+    <field id="index" type = "int" /> 
+    <field id="focusPercent" type = "float" value = "0" onChange="showfocus" /> 
+    <field id="gridHasFocus" type = "bool" value = "false" /> 
+    <field id="itemHasFocus" type = "bool" value = "false" /> 
+  </interface>
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+  <script type="text/brightscript" uri="MenuButton.brs" />
+  <children>
+    <LayoutGroup id="mainGroup" layoutDirection="vert" vertAlignment="center" horizAlignment="center" itemSpacings="[50]"  >
+      <Poster id="icon" />
+      <Label id="buttonLabel" horizAlign="center" wrap="true"/>
+    </LayoutGroup>
+  </children> 
+</component>

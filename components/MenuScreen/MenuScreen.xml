@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--********** Copyright 2021 Roku Corp.  All Rights Reserved. **********-->
+<component name="MenuScreen" extends="Group" >
+  
+  <interface>
+    <field id="content" alias="buttons.content" />
+	<field id="itemSelected" type="integer" alias="buttons.itemSelected" />
+  </interface>
+  
+  <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+  <script type="text/brightscript" uri="MenuScreen.brs" />
+
+  <children>
+    <LayoutGroup id="mainGroup" layoutDirection="vert" vertAlignment="center" horizAlignment="center" translation="[960, 540]" >
+      <MarkupGrid
+        id = "buttons"
+        itemComponentName="MenuButton"
+        drawFocusFeedback="false"
+        itemSize="[240, 400]"
+        itemSpacing = "[60, 600]"
+        focusable="true"/>
+    </LayoutGroup>
+  </children>
+</component>

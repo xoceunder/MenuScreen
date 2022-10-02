@@ -1,0 +1,46 @@
+{
+  "apiUrl": "https://ottfeed.com/2manntv-IdqPI5OqSFf03XDfyHgs",
+  "apiUrlLivestream": "https://ottfeed.com/2manntv-livestream-IdqPI5OqSFf03XDfyHgs",
+  "vastTag": "",
+  "_gaTrackingId": "",
+  "OTTfeedAnalyticsTrackingId": "9",
+  "OTTfeedAnalyticsURL": "https://analytics.ottfeed.com/matomo.php",
+
+  "authenticationAPIKey": "",
+
+  "firebaseAuth": false,
+  "firebaseAuthUrl": "",
+  "firebaseRegisterUrl": "",
+
+  "s2memberAuth": false,
+  "s2memberAuthUrl": "",
+
+  "loginRequired": false,
+  "registerHint": "To register go to www.2mann.com/register",
+  "subscriberRoles": {  "s2member_level1": "",
+                        "s2member_level2": "",
+                        "s2member_level3": "",
+                        "s2member_level4": ""
+                      },
+  
+
+  "themes":  [ "Main"  ],
+
+
+  "feedSections":	[
+                  	{"name": "movies", "isLive": false},
+                  	{"name": "shortFormVideos", "isLive": false, "isShortFormVideos": true},
+                  	{"name": "series", "isLive": false},
+                  	{"name": "liveFeeds", "isLive": true},
+                  	{"name": "tvSpecials", "isLive": false}
+                  ],
+
+  "autoplayCounter": 5,
+  "playbackSecondsBetweenAds": 45,
+  "minBookmarkVideoLength": 600,
+
+  "systemLanguages": ["en"],
+  "languages": {"en": "en_US"},
+
+  "regSection": "CustomSDK"
+}
